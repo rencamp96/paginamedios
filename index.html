@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Medios Digitales</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS -->
+    <script src="js/lottie.js"></script>
+    <script src="js/data.js"></script>
+  </head>
+  <body>
+
+    <div id="background"></div>
+
+    <!-- Header -->
+    <video id="videoBG" muted loop>
+      <source src="assets/reel.mp4" type="video/mp4">
+    </video>
+    <div id="topdiv">
+      <img src="assets/centro.png" id= "logo">
+    </div>
+    <div class= "container-fluid" style="height: 40vh;"></div>
+    <div class= "container-fluid text-center" style="height: 12vh;">
+      <h1>TECNOLOGÍA CREATIVA</h1>
+      <button id="boton1">Pedir informes</button>
+    </div>
+    <div class= "container-fluid" style="height: 40vh;"></div>
+
+    <!-- Sección 1 -->
+    <div id="sec1">
+      <div class="row justify-content-center">
+        <div id="sec1_texto">
+          <h3> Estudia la Licenciatura en Medios Digitales y Tecnología en CENTRO </h3>
+          <p> La licenciatura en Medios Digitales y Tecnología forma directores creativos en ciencias computacionales aplicadas en contextos de artes, medios audiovisuales y diseño de interacción.</p>
+        </div>
+        <div>
+          <picture>
+            <source media="all and (min-width:481px) and (max-width : 768px)" srcset="assets/formulario_v.png">
+            <source media="only screen and (max-width : 480px)" srcset="assets/formulario_v.png">
+            <img src="assets/formulario.png" alt="Flowers" id="formulario">
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección 2 -->
+    <div id="sec2" class="row justify-content-center rellax" style="background-color:#262626;" data-rellax-speed="1" data-rellax-percentage="1">
+      <div id="sec2_texto1">
+          <h4>LA NUEVA INTERACCIÓN</h4>
+          <h4>HUMANO</h4>
+          <h4>COMPUTADORA</h4>
+      </div>
+      <div id="sec2_texto2">
+        <p> El mundo requiere expertos transdisciplinarios con conocimiento profundo en dos áreas: lo humano (artes, diseño comunicación) y los sistemas / dispositivos computacionales (programación y bases de electrónica e ingeniería).</p>
+      </div>
+    </div>
+
+    <!-- Sección 3 - 3D -->
+    <div id="scene3d"></div>
+    <div id="sec3">
+      <!-- <img src="assets/blobs.png" id="blobs" class="rellax" data-rellax-speed="10" data-rellax-percentage=".7"> -->
+      <div id="sec3_texto">
+        <img src="assets/modelo.png" id="modelo_pic">
+        <h6>Diseño</h6>
+        <h6>Arte</h6>
+        <h6>Tecnología</h6>
+        <p>El aspirante debe expresar interés y pasión por los productos que emergen de la cultura digital: gráfica e ilustración 2D y 3D, animación, video experimental, experiencias interactivas, videojuegos, aplicacionespara web y móviles, música electrónica, entre otros. Debe combinar la sensibilidad estética con el gusto por la ciencia y la tecnología.</p>
+        <br>
+        <button id="boton2">Registrarme para el examen</button>
+        <button id="boton2">Pedir informes</button>
+      </div>
+    </div>
+
+    <!--Sección 4 - Carrusel -->
+    <div id="container">
+        <div id="container2">
+          <div class="box1 one">
+            <div class="sec4_texto">
+              <h3>CREA EXPERIENCIAS</h3>
+              <h4>De qué trata la licenciatura</h4>
+              <p>Desarrollarás habilidades para dirigir y trabajar en equipos que involucran diversas disciplinas: grafista basadoen código creativo, ilustrador digital, animador 2D/3D, diseñador o programador de interacción/videojuegos, artista electrónico, creativo en laboratorios de innovación tecnológica, etc. Podrás concebir, desarrollar y producir proyectos para industrias creativas con un amplio rango de aplicaciones, desde productoras de animación, hasta automatización de espectáculos y conciertos basado en cinética o video mapping, software de realidad virtual/aumentada para medios hápticos, etc.</p>
+              <button id="boton3">Pedir informes</button>
+            </div>
+          </div>
+          <div class="box2 two">
+              <div>
+                <div class="fila">
+                  <img src="assets/carrusel1.gif" onclick="openModal();currentSlide(1)" class="hover-shadow cursor pic1">
+                </div>
+                <div class="fila">
+                  <img src="assets/carrusel2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor pic2">
+                  <img src="assets/carrusel3.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor pic2">
+                </div>
+              </div>
+          </div>
+          <div class="box3 two">
+            <div>
+              <div class="fila">
+                <img src="assets/carrusel4.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor pic3">
+              </div>
+            </div>
+          </div>
+          <div class="box4 two">
+              <div>
+                <div class="fila">
+                  <img src="assets/carrusel6.png" onclick="openModal();currentSlide(2)" class="hover-shadow cursor pic4">
+                  <img src="assets/carrusel5.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor pic4">
+                </div>
+                <div class="fila">
+                  <img src="assets/carrusel7.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor pic5">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Sección 5 -->
+    <div class= "container-fluid" style="height: 100vh; background-color:#161616;"></div>
+    <div style="height: 100vh; background-color:#00EFBF; position:auto;" id="bodymovin">
+    </div>
+
+    <!-- lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <img src="assets/lightbox1.png" class="lightbox1">
+          <div>
+            <h6>Po-Ji</h6>
+            <p>6to Semestre</p>
+            <p>Corto Animado con Motion Capture.</p>
+            <p>Hector Eduardo Cabrera, Renata Campuzano, Diego Morales, Shelly Siton, Ana Villalobos, Daniela Bocanegra.</p>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <img src="assets/lightbox1.png" class="lightbox1">
+          <div>
+            <h6>Po-Ji</h6>
+            <p>6to Semestre</p>
+            <p>Corto Animado con Motion Capture.</p>
+            <p>Hector Eduardo Cabrera, Renata Campuzano, Diego Morales, Shelly Siton, Ana Villalobos, Daniela Bocanegra.</p>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <img src="assets/lightbox1.png" class="lightbox1">
+          <div>
+            <h6>Po-Ji</h6>
+            <p>6to Semestre</p>
+            <p>Corto Animado con Motion Capture.</p>
+            <p>Hector Eduardo Cabrera, Renata Campuzano, Diego Morales, Shelly Siton, Ana Villalobos, Daniela Bocanegra.</p>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <img src="assets/lightbox1.png" class="lightbox1">
+          <div>
+            <h6>Po-Ji</h6>
+            <p>6to Semestre</p>
+            <p>Corto Animado con Motion Capture.</p>
+            <p>Hector Eduardo Cabrera, Renata Campuzano, Diego Morales, Shelly Siton, Ana Villalobos, Daniela Bocanegra.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading Page -->
+    <section id="loading-screen">
+      <div id="loader"></div>
+    </section>
+
+    <!-- <script>
+        var animParams = {
+            wrapper: document.getElementById('bodymovin'),
+            animType: 'html',
+            loop: true,
+            prerender: false,
+            autoplay: true,
+            animationData: animData
+
+        };
+        bodymovin.setQuality(500);
+        var anim = bodymovin.loadAnimation(animParams);
+        window.onresize = anim.resize.bind(anim);
+    </script> -->
+
+    <!-- JavaScript -->
+    <script src="js/lib/three.js"></script>
+    <div><script src="js/main.js" type="module" id="three"></script></div>
+    <script src="js/rellax.min.js"></script>
+    <script> var rellax = new Rellax('.rellax');</script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="js/bootstrap.min.js"></script>
+   </body>
+</html>
