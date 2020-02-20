@@ -165,7 +165,7 @@ html, body {
 #sec2{
   padding-top: 5vh;
   padding-bottom: 5vh;
-  z-index: 3;
+  z-index: 1;
 }
 
 #sec3{
@@ -214,7 +214,7 @@ html, body {
 
 #scene3d {
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	width: 32vw;
 	height: 100vh;
   margin-left: 5vw;
@@ -493,6 +493,21 @@ p {
   background-color: #2ABC92 !important;;
 }
 
+#blob{
+  position: absolute;
+  z-index: 2;
+  left: 200px;
+  height:100%;
+  width:auto;
+}
+
+#blankspace{
+  display: block;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
 /* -----------------------------
 ----- Sección 4 - Carrusel -----
 ----------------------------- */
@@ -627,19 +642,14 @@ p {
 }
 
 #container {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  transform: rotate(270deg) translateX(-100%);
-  transform-origin: top left;
-  background-color:#999;
   position:absolute;
-  left: 0;
+  /* transform-origin: top left;  */
   width:100vh;
   height:100vw;
 }
 
 #container2 {
-  transform: rotate(90deg) translateY(-100vh);
+  position:absolute;
   transform-origin: top left;
   white-space:nowrap;
   font-size:0;
@@ -731,6 +741,15 @@ p {
 * {
   box-sizing: border-box;
 }
+
+#espacio_fondo{
+  height: 100vh;
+}
+/* #blankspace{
+  width: 100%;
+  height: auto;
+  z-index: 100;
+} */
 
 /* -----------------------------
 ----- Sección 4 - lightbox -----
@@ -876,6 +895,85 @@ img.hover-shadow {
   line-height: 20px;
   font-size: 8pt;
   margin-right: 100px;
+}
+
+/* -----------------------------
+------------Sección 5-----------
+----------------------------- */
+#sec5{
+  display: block;
+  background-color:#161616;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+} @media all and (min-width:481px) and (max-width : 768px) {
+  #sec5{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+} @media only screen and (max-width : 480px) {
+  #sec5{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}
+
+#roberto {
+  width: 24vw;
+  height: auto;
+} @media all and (min-width:768px) and (max-width : 1100px) {
+  #roberto{;
+    width: 24vw;
+  }
+} @media all and (min-width:481px) and (max-width : 768px) {
+  #roberto{
+    width: 44vw;
+    margin-top: 5vh;
+  }
+} @media only screen and (max-width : 480px) {
+  #roberto{
+    display: inline-block;
+    width: 64vw;
+    margin-top: 3vh;
+  }
+}
+
+#sec5_texto{
+  display: inline-block;
+  width: 34vw;
+  margin-right: 6vw;
+} @media all and (min-width:768px) and (max-width : 1100px) {
+  #sec5_texto{;
+    width: 40vw;
+    margin-right: 6vw;
+  }
+} @media all and (min-width:481px) and (max-width : 768px) {
+  #sec5_texto{
+    width: 64vw;
+    margin-top: 0vh;
+    margin-right: 0vw;
+  }
+} @media only screen and (max-width : 480px) {
+  #sec5_texto {
+  display: inline-block;
+  width: 64vw;
+  margin-right: 0vw;
+  }
+}
+
+#sec5_texto >h3{
+  font-size: 1.2vw;
+} @media all and (min-width:768px) and (max-width : 1100px) {
+  #sec5_texto >h3 {;
+    font-size: 1.3vw;
+  }
+} @media all and (min-width:481px) and (max-width : 768px) {
+  #sec5_texto >h3 {
+    font-size: 1.8vw;
+  }
+} @media only screen and (max-width : 480px) {
+  #sec5_texto >h3 {
+    font-size: 3vw;
+  }
 }
 
 /* -----------------------------

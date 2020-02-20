@@ -186,7 +186,7 @@ function onMouseWheel( event ) {
   var percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
 
   var videoBGHeight = document.getElementById('videoBG').clientHeight;
-  var carouselPosTop = document.getElementById('container').offsetTop;
+  var carouselPosTop = document.getElementById('espacio_fondo').offsetTop;
 
   if(window.scrollY<videoBGHeight){
     model.rotation.set(0,.8,0);
