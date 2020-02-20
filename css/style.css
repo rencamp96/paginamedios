@@ -735,7 +735,7 @@ p {
   background-color: #EDDE05;
 }
 .four {
-  background-color: #E84B30;
+  background-color: #2C3EC8;
 }
 
 * {
@@ -744,6 +744,7 @@ p {
 
 #espacio_fondo{
   height: 100vh;
+
 }
 /* #blankspace{
   width: 100%;
